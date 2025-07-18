@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- SEO & Social Meta --><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Home | My Awesome Site</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Home" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="My Awesome Site" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"Home","name":"My Awesome Site","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Theme CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+
+  <!-- Icons -->
+  <link rel="icon" href="/assets/images/icons/favicon.ico">
+  
+  <!-- MathJax Configuration -->
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']],
+        processEscapes: true,
+      },
+    options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  
+  
+
+</head>
+
+  <body>
+    <nav class="site-nav">
+  <div class="nav-wrapper">  <!-- Added wrapper -->
+  <a href="/">Home</a> |
+  <a href="/about">About</a> |
+  <a href="/projects">Projects</a> |
+  <a href="/less_personal_info_CV_Brice_Arrigo.pdf">Resume</a>
+  </div>
+</nav>
+
+    
+    <!-- Add Minima's layout structure -->
+    <main class="page-content">
+      <div class="wrapper">
+        <h1 id="welcome-to-my-website">Welcome to My Website!</h1>
+
+<p>This is hosted on GitHub Pages. 🚀</p>
+
+<p>Here’s some stuff from my honours thesis:</p>
+
+<h1 id="conjecture">Conjecture</h1>
+<p>The polynomial \(H_{g,n}^{bt}(\mu_1,\dots,\mu_2)\) interlaces each of the \(n\) polynomials
+\[H_{g,n}^{bt}(\mu_1+1\dots,\mu_2),\dots, H_{g,n}^{bt}(\mu_1,\dots,\mu_n+1)\]</p>
+
+<p>Where the polynomials \(H_{g,n}^{bt}(\mu_1,\dots,\mu_2)\) are defined by the following recursion with the base case \(H_{0,1}^{bt}(1)=1\).</p>
+<div class="math-container">
+
+\begin{aligned}
+\mu_1 H_{g,n}^{tb}(\mu) &amp;= (1+b)\sum_{i=2}^n(\mu_1+\mu_i,\mu_{S\setminus\{i\}})\\
+&amp;\quad +\sum_{\alpha+\beta = \mu_1}\alpha\beta\left[ H_{g-1,n+1}^{bt}(\alpha,\beta,\mu_S)+\sum_{\substack{g_1+g_2 = g \\ I_1\sqcup I_2 = S}} H_{g_1,|I_1|+1}^{bt}(\alpha,\mu_{I_1})H_{g_2,|I_2|+1}^{bt}(\beta,\mu_{I_2})\right]\\
+&amp;\quad + b\mu_1(\mu_1) H_{g-1/2,n}^{bt}(\mu_1,\mu_S)\\
+&amp;\quad +(t-1)(\mu_1-1) H_{g,n}^{bt}(\mu_1-1,\mu_S)
+\end{aligned}
+</div>
+<p>Where \(S = {2,\dots,n}\) and \(g_1,g_2,g\in\frac{1}{2}\mathbb{Z}\).</p>
+
+<p>We know this to be true for \(b = 0, t = 1, g = 0, n =1\) as this recursion recovers a known recursion for the sequence of Narayana polynomials, which are known to be interlacing.</p>
+
+<p><a href="about">About Me</a>  <!-- Jekyll automatically handles links --></p>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-content">
+      <p>© 2025 My Awesome Site - Powered by <a href="https://jekyllrb.com/">Jekyll</a></p>
+      
+      <div class="social-links">
+        <!-- Example social links - customize with your own -->
+        <a href="https://github.com/LickorishTwist" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/brice-arrigo/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
